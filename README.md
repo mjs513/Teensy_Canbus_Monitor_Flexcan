@@ -1,16 +1,14 @@
 # Teensy CAN Bus Monitor
 
-This is a small sketch that is used to monitor CAN Bus activity.
-
-It is essentially a clone of arduino-canbus-monitor by latonia, https://github.com/latonita/arduino-canbus-monitor, modified for use on Teensy 3.x processors.  It uses IFCT to emulate mcp_can which allows it to be used with with CAN breakout boards other than MCP2515.  A version of IFCT which you add to your libraries folder.  For the latest version of IFCT go to https://github.com/tonton81/IFCT.
+It is essentially a clone of arduino-canbus-monitor by latonia, https://github.com/latonita/arduino-canbus-monitor, modified for use on Teensy processors that have a CAN Bus.  It uses FLEXCAN_T4 allows it to be used with with CAN tranceiver other than MCP2515.  FLEXCAN_T4 is installed automattically when you install Teensyduino or via boards manager.
 
 # Description from the arduino-canbus-monitor by latonia
 
-Can bus monitoring tool based on arduino and can bus shield. Implements CAN ASCII/SLCAN protocol compatible with Lawicel CAN232/CANUSB. Can be used for monitoring low speed CAN (interior can bus of most cars, less than 500kbps). For higher speeds serial port can become a bottleneck in case data density is high. 
+Can bus monitoring tool based on arduino and can bus. Implements CAN ASCII/SLCAN protocol compatible with Lawicel CAN232/CANUSB. Can be used for monitoring low speed CAN (interior can bus of most cars, less than 500kbps). For higher speeds serial port can become a bottleneck in case data density is high. 
 
-NOTE: I have tested this on a Teensy 3.6 at 1,000,000 bps and no problem
+NOTE: I have tested this on a Teensy 3.6 at 1,000,000 bps and no problem same goes for Teensy 4.1 and Teensy MicroMod.
 
-# arduino-canbus-monitor [![Build Status](https://api.travis-ci.org/latonita/arduino-canbus-monitor.svg?branch=master)](https://travis-ci.org/latonita/arduino-canbus-monitor) [![Coverity Scan](https://scan.coverity.com/projects/11684/badge.svg)](https://scan.coverity.com/projects/latonita-arduino-canbus-monitor) [![Analytics](https://ga-beacon.appspot.com/UA-99380399-1/welcome-page)](https://github.com/igrigorik/ga-beacon)
+# arduino-canbus-monitor 
 
 CAN BUS monitoring software based on Arduino with Seeduino/ElecFreaks CAN BUS shield based on MCP2515 (Numerous other MCP2515 based CAN BUS modules from ebay and aliexpress work well to).
 
