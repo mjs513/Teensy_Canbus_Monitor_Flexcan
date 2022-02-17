@@ -10,7 +10,7 @@
 
 *****************************************************************************************/
 
-#include "can-232.h"
+#include "Flexcan_232.h"
 
 void setup() {
   Serial.begin(LW232_DEFAULT_BAUD_RATE); // default COM baud rate is 115200.
